@@ -1,0 +1,263 @@
+:root {
+  --titleBarBackgroundColor : #1c1c31;
+  --titleTextColour:#FFFFFF;
+  --titleButtonHover: #0077cc;
+  --titleButtonActive: #014f86;
+  --bodyBackgroundColor: #FFFFFF;
+  --sectionTitleBackgroundColor: #1c1c31;
+  --sectionTextColor: #252546;
+  --optionBackgroundColor: #FFFFFF;
+  --footerBackgroundColor: #252546;
+  --footerTextColor: #A7A7A7 ;
+  --buttonColor: #1c1c31;
+  --buttonTextColor: #FFFFFF;
+  --darkTextColor:  #FFFFFF;
+  --codeBoxBackground: #cccccc;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border : 0px;
+}
+
+body {
+  height:100%;
+  width:100%;
+  margin: 0px;
+  padding:0px;
+  background-color : var(--bodyBackgroundColor) ;
+}
+
+#titleFrame {
+  box-sizing: border-box;
+  height:25px;
+  background-color: var(--titleBarBackgroundColor);
+  width:100%;
+  padding: 2px;
+}
+
+#titleBar {
+  color : var(--titleTextColour);
+  background-color : var(--titleBarBackgroundColor);
+  height : 100%;
+  width: 100%;
+  -webkit-app-region: drag;
+  z-index: 999999999;
+  box-sizing: border-box;
+  top: 0;
+  left:0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+  line-height: 35px;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.titleBarClose {
+    -webkit-app-region: no-drag;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 7px;
+    padding: 5px;
+    opacity: 0.9;
+    z-index: 1000;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+.titleBarClose:hover {
+  background-color: var(--titleButtonHover);
+  opacity: 1;
+  border-radius: 3px;
+}
+
+.titleBarClose:active {
+  background: var(--titleButtonActive);
+}
+
+.titleBarMaximize {
+  -webkit-app-region: no-drag;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 29px;
+  padding: 5px;
+  opacity: 0.9;
+  z-index: 1000;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.titleBarMaximize:hover {
+  -webkit-app-region: no-drag;
+  background-color: #0077cc;
+  opacity: 1;
+  border-radius: 3px;
+}
+
+.ttitleBarMaximize:active {
+  background: #014f86;
+}
+.titleBarRestore {
+  -webkit-app-region: no-drag;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 52px;
+  padding: 5px;
+  opacity: 0.9;
+  z-index: 1000;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.titleBarRestore:hover {
+  -webkit-app-region: no-drag;
+  background-color: #0077cc;
+  opacity: 1;
+  border-radius: 3px;
+}
+
+.ttitleBarRestore:active {
+  background: #014f86;
+}
+
+.titleBarMinimize {
+  -webkit-app-region: no-drag;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 75px;
+  padding: 5px;
+  opacity: 0.9;
+  z-index: 1000;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.titleBarMinimize:hover {
+  background-color: var(--titleButtonHover);
+  opacity: 1;
+  border-radius: 3px;
+}
+
+.titleBarMinimize:active {
+  background: var(--titleButtonActive);
+}
+
+.content{
+  font-size: .75em;
+  margin: auto;
+  color: white;
+}
+
+#sections-container{
+  width: 100%;
+}
+
+.section-headder{
+  background: var(--sectionTitleBackgroundColor);
+  margin-top: 1px;
+
+}
+
+.section{
+  background: var(--optionBackgroundColor);
+  color: var(--sectionTextColor);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: middle;
+}
+
+.hidden{
+  display: none;
+}
+
+.overview{
+  width : 100%;
+  margin: auto;
+  text-align: center;
+}
+
+h1{
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+h2{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+h3{
+  margin-top: 1px;
+  margin-bottom: 5px;
+}
+
+p{
+  margin-bottom: 5px;
+}
+
+.menuButton{
+  height: 30px;
+  width: 100px;
+  color : var(--buttonTextColor);
+  background-color: var(--buttonColor);
+  margin-top: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.menuButton:hover{
+  background-color: var(--titleButtonHover);
+};
+
+.menuButton p{
+  margin: auto;
+  color : var(--buttonTextColor);
+  text-align: center;
+}
+
+.codeExample{
+  background-color: var(--codeBoxBackground);
+  width : 100%;
+  margin-bottom: 5px;
+}
+
+footer{
+  height:25px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--footerBackgroundColor) ;
+  vertical-align: middle;
+}
+
+#version-number-container{
+  float: left;
+  margin: 7px;
+  color: var(--footerTextColor);
+  vertical-align: middle;
+  letter-spacing: 2px;
+  font-size: 10px;
+  display: flex;
+}
+
+#dev-button{
+  float: right;
+  margin: 7px;
+  color: var(--footerTextColor);
+  vertical-align: middle;
+  letter-spacing: 2px;
+  font-size: 10px;
+  display: flex;
+}

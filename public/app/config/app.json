@@ -1,0 +1,25 @@
+{
+    "devtools_port": 9090,
+    "startup_app": {
+        "url": "http://localhost:8080/index.html?sections=modalExample",
+        "name": "OpenFin Support API Examples",
+        "uuid": "API Example Template",
+        "frame": false,
+        "autoShow": true,
+        "defaultWidth": 500,
+        "defaultHeight": 53,
+        "saveWindowState": false,
+        "applicationIcon": "http://localhost:8080/favicon.ico",
+        "cornerRounding": {
+            "height": 7,
+            "width": 7
+        }
+    },
+    "runtime": {
+        "version": "stable",
+        "arguments" : ""
+    },
+    "shortcut": {
+        "icon": "http://localhost:8080/favicon.ico"
+    }
+}

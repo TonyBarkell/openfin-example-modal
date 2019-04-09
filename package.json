@@ -1,0 +1,25 @@
+{
+  "name": "openfin-examples-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyBarkell/OpenFin-Examples-Template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyBarkell/OpenFin-Examples-Template/issues"
+  },
+  "homepage": "https://github.com/TonyBarkell/OpenFin-Examples-Template#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hadouken-js-adapter": "^0.38.1",
+    "portfinder": "^1.0.20"
+  }
+}
